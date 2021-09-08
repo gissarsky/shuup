@@ -4,7 +4,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 sh '''
-                    docker-compose -f docker-compose-dev.yml up
+                    docker-compose up
                     docker-compose ps --format json
                     '''         
             }
