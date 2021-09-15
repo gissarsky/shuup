@@ -14,7 +14,7 @@ pipeline {
                     echo "building the shuup docker image.."
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PSW', usernameVariable: 'USER')]) {
                         sh 'docker build -t gissarsky/shuup:1.0 .'
-                        sh "docker login -u $USER --p $PSW"
+                        sh "docker login -u $USER -p $PSW"
                         sh 'docker push gissarsky/shuup:1.0'
                     }    
                 }
