@@ -26,7 +26,7 @@ pipeline {
                 AWS_SECRET_ACCESS_KEY = credentials('jenkins_aws_secret_access_key')
             }
             steps {
-                sh "kubcetl create deployment"                
+                sh "kubectl create deployment"                
             }
         }
     }
