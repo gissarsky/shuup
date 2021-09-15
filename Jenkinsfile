@@ -15,7 +15,7 @@ pipeline {
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PSW', usernameVariable: 'USER')]) {
                         sh 'docker build -t exadeldevops/shuup:1.0 .'
                         sh "docker login -u $USER -p $PSW"
-                        sh 'docker push exadeldevos/shuup:1.0'
+                        sh 'docker push exadeldevops/shuup:1.0'
                     }    
                 }
             }
