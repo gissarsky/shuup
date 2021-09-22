@@ -151,3 +151,8 @@ Admin Preview
 .. image:: doc/_static/admin_order_detail.png
     :target: doc/_static/admin_order_detail.png
     :height: 300px
+
+
+
+
+Readme changed
